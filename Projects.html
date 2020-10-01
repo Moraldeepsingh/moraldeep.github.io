@@ -26,6 +26,7 @@
 					Statistics<br />
 					Natural Language Processing<br />
 					<br /><br />
+					<ul class="links"><li><a href="index.html">HomePage</a></li></ul>
 					
 					
 					
@@ -41,7 +42,7 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h1 style="text-align: center"> <u><strong>Education </strong>   </u>  </h1>
+							<h1 style="text-align: center"> <u><strong>Projects </strong>   </u>  </h1>
 							<!-- <h2 style="text-align: center;font-size:35px">Analytics | Supply Chain | Product Management Enthusiast</h2> -->
 							<!-- <p style="color:grey;text-align:left; font-size:18px">
 								<a href="images/mytransition2.svg" class="image"></a><img src="images/mytransition2.svg" alt="" /></a>
@@ -78,12 +79,14 @@
 			
 
 					<section id="two">
-						<h2 >1. Pedestrian Intention Prediction</h2>
+						<h2 style="text-decoration: underline">1. Pedestrian Intention Prediction</h2>
+						<p style="font-size: larger; color:midnightblue;">Tags: Data Science in Automotive Industries (Autonomous Driving Sector)</p>
 						<!-- <h2 style="font-size: smaller">Master of Engineering in Industrial Engineering and Operations Research (August 2019 to December 2020)</h2> -->
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<img src="images/Project_Images/modelA.gif" alt="Beam_1" style="width:489px;height326px;">
 								<img src="images/Project_Images/modelC.gif" alt="Beam_1" style="width:489px;height326px;">
+							</div>
 								<!-- <a href="#" class="image"><img src="images/Work_Images/Beam_1.jpg" style="width:489px;height:326px alt=" /></a> -->
 								<!-- <ul class="images"><li><a href="Website Project/Work Experience.html">Work Experience</a></li></ul> -->
 								</article>
@@ -96,8 +99,12 @@
 							
 							<p style="font-family: Arial, Helvetica, sans-serif;">
 								
+								
 								Brief Project description:</br></br>
-								Collaborative research project between Volvo Cars, 
+								<ul class="links"><li><a href="https://github.com/mjpramirez/Volvo-DataX">Github Repo</a></li></ul>
+								<ul class="links"><li><a href="https://matthew29tang.github.io/pid-model/#/">Project Website</a></li></ul>
+								<ul class="links"><li><a href="https://arxiv.org/abs/2005.07796">Research Paper at arXiv</a></li></ul>
+								This project was a Collaborative research project between Volvo Cars, 
 								and student teams from UC Berkeley and Chalmers University.</br></br>
 
 								The research project was aimed at predicting the intention of a pedestrian 
@@ -108,93 +115,83 @@
 								decided on experimenting additional approaches and eventually arrived at Fusion 
 								based Intention Prediction Networks.</br></br>
 
-								First Model that we built was based on the research paper. 
-								This model consisted of 3 components: Object detector, object tracker, 
-								and a classifier. The model predicted the intention of pedestrians to cross
-								 or not cross by indicating a red/green bounding box around the pedestrians.
-								 As far as the ego vehicle is concerned, the intention of pedestrians in the
-								  immediate vicinity or the path of the vehicles are of importance, whereas other 
-								  pedestrians in the scene are not important (hence their bounding box colors should 
-								  be green for most of the scene duration). The model's input is the live video feed 
-								  from the front camera after which the object detector (YOLOv3) dissects the video 
-								  into frames and tries to localize the objects of interest (pedestrian in our case) 
-								  in each frame by plotting bounding boxes around them. After this stage, the detected 
-								  pedestrians in the video are tracked with the help of an object tracker (SORT) 
-								  resulting in unique IDs for each pedestrian in the video. Finally the detected and 
-								  tracked pedestrians from each frame are gathered as features for the 3D scene classifier 
-								  (DenseNet). The classifier uses the information of each pedestrian in the video to predict 
-								  their intention to cross, ultimately resulting in a green bounding box for non-crossing 
-								  pedestrian and red bounding boxes for crossing pedestrians.</br></br>
-
-								The challenge here was to predict the intention at least 
-								0.5 secs before the intended action occurred, which from 
-								a safety perspective was required for the car to make any necessary decision.</br></br>
-
-								Our teams took this basic framework and experimented with 
-								alternate types for each component of the model such as SORT, 
-								DeepSORT, Pose-Estimation based detection, and tracking. Similarly, 
-								alternate types for classifiers such as Recurrent Neural Networks, Random Forest,
-								 and DenseNets. Finally we tried feature engineering for the DenseNet 
-								 classifier which initially used only the cropped pedestrian images as 
-								 features. In this feature engineering we applied skeletons for the pedestrian 
-								 using Pose-Estimator and retrained the classifier resulting in an improved AP 
-								 score of 0.89 achieving more than the research paper that we started with. Thus 
-								 using this new classifier and additional feature engineering we arrived at a better 
-								 model for the intent prediction that predicts 0.5 secs before the intended action occurs.</br></br>
-
-								For clear schematics diagrams, codes, demos and the Research paper and explanations 
-								please check out the different URLs at the top of the page.
-								<ul class="links"><li><a href="https://github.com/mjpramirez/Volvo-DataX">Github Repo</a></li></ul>
-								<ul class="links"><li><a href="https://matthew29tang.github.io/pid-model/#/">Project Website</a></li></ul>
-								<ul class="links"><li><a href="https://arxiv.org/abs/2005.07796">Research Paper at arXiv</a></li></ul>
-								</p>
-						</section>
-						
-						<section id="two">
-							<h2 >2. Development of Sustainable Value Stream Mapping (VSM) for Unit Part Manufacturing: A Simulation Approach</h2>
-							<!-- <h2 style="font-size: smaller">Weekend MBA Additional Coursework undertaken</h2> -->
-							<div class="row">
-								<article class="col-6 col-12-xsmall work-item">
-									<img src="images/Project_Images/vsm_2.jpg" alt="Merc_1" style="width:489px;height326px;">
-									<!-- <a href="#" class="image"><img src="images/Work_Images/Beam_1.jpg" style="width:489px;height:326px alt=" /></a> -->
-									<!-- <ul class="images"><li><a href="Website Project/Work Experience.html">Work Experience</a></li></ul> -->
-									</article>
-								<!-- <article class="col-6 col-12-xsmall work-item">
-									<img src="images/Work_Images/Beam_2.jpg" alt="Beam_2" style="width:489px;height326px;">
-									 <a href="#" class="image"><img src="images/Work_Images/Beam_2.jpg" style="width:500px;height:600px alt=" /></a> -->
-									<!-- <h3>Projects</h3> -->
-									<p></p>
-								</article>
+								<ul class="links"><li><a href="Projects-1.html">Read More here</a></li></ul>
 								
-								<p style="font-family: Arial, Helvetica, sans-serif;">
-									The main purpose of this research is to analyze the current state of methodology 
-									adopted in a bonnet manufacturing industry and optimizing the process by designing 
-									a future state map using simulation approach. The case study approach has been proposed 
-									to highlight the applicability of VSM in an Indian bonnet manufacturing organization. </br></br>
-									
-									The methodology used relies on formulation of Value stream map 
-									being the main tool used to identify the opportunities for classifying 
-									and eliminating bottlenecks with the help of various lean techniques. 
-									A contrast of present and past scenario is highlighted to underscore the 
-									importance of using VSM with Arena Simulation.</br></br>
-									
-									Lean tools usage has begun to grow rapidly in the past two decades. 
-									Standalone concepts like lean, VSM, Green tools are highly researched upon 
-									but there is a huge gap identified in combining these techniques especially 
-									because its practicality is questioned. This research combines VSM with simulation
-									 and lean techniques including Break even analysis to authenticate its practicality. </br></br>
-									 
-									 The green tools have been emphasized upon directing at reduction of environmental impacts.
-									 
-									 Paper published in the International Journal of Lean Six Sigma</br></br>
-									 <ul class="links"><li><a href="https://www.emerald.com/insight/content/doi/10.1108/IJLSS-04-2018-0036/full/html">Research Paper at Emerald Publications-Lean Six Sigma Journal</a></li></ul>
 									 
 								</p>
 							</section>
 							
-
 							<section id="two">
-								<h2 >3. Credit Risk Analysis (Python) </h2>
+								<h2 style="text-decoration: underline" >2. Development of Sustainable Value Stream Mapping (VSM) for Unit Part Manufacturing: A Simulation Approach</h2>
+								<p style="font-size: larger; color:midnightblue;">Tags: Operations, Supply Chain and Data Analytics</p>
+								<!-- <h2 style="font-size: smaller">Weekend MBA Additional Coursework undertaken</h2> -->
+								<div class="row">
+									<article class="col-6 col-12-xsmall work-item">
+										<img src="images/Project_Images/vsm_2.jpg" alt="Merc_1" style="width:489px;height326px;">
+										<!-- <a href="#" class="image"><img src="images/Work_Images/Beam_1.jpg" style="width:489px;height:326px alt=" /></a> -->
+										<!-- <ul class="images"><li><a href="Website Project/Work Experience.html">Work Experience</a></li></ul> -->
+										</article>
+									<!-- <article class="col-6 col-12-xsmall work-item">
+										<img src="images/Work_Images/Beam_2.jpg" alt="Beam_2" style="width:489px;height326px;">
+										 <a href="#" class="image"><img src="images/Work_Images/Beam_2.jpg" style="width:500px;height:600px alt=" /></a> -->
+										<!-- <h3>Projects</h3> -->
+										<p></p>
+									</article>
+									<article>
+									
+										<ul class="links"><li><a href="https://www.emerald.com/insight/content/doi/10.1108/IJLSS-04-2018-0036/full/html">Research Paper at Emerald Publications-Lean Six Sigma Journal</a></li></ul>
+									</article>
+									
+									<p style="font-family: Arial, Helvetica, sans-serif;color: black;">
+										
+	
+										The main purpose of this research is to analyze the current state of methodology 
+										adopted in a bonnet manufacturing industry and optimizing the process by designing 
+										a future state map using simulation approach. The case study approach has been proposed 
+										to highlight the applicability of VSM in an Indian bonnet manufacturing organization. 
+										
+										<ul class="links"><li><a href="Projects-2.html">Read More here</a></li></ul>
+										 
+										
+										 
+									</p>
+								</section>
+								<section id="three">
+									<h2 style="text-decoration: underline">3. Bike Sharing Analysis</h2>
+									<p style="font-size: larger; color:midnightblue;">Tags: Operations, Supply Chain and Data Analytics</p>
+									<!-- <h2 style="font-size: smaller">Weekend MBA Additional Coursework undertaken</h2> -->
+									<div class="row">
+										<article class="col-6 col-12-xsmall work-item">
+											<img src="images/Project_Images/bike1.png" alt="Merc_1" style="width:489px;height326px;">
+											<!-- <a href="#" class="image"><img src="images/Work_Images/Beam_1.jpg" style="width:489px;height:326px alt=" /></a> -->
+											<!-- <ul class="images"><li><a href="Website Project/Work Experience.html">Work Experience</a></li></ul> -->
+											</article>
+										<!-- <article class="col-6 col-12-xsmall work-item">
+											<img src="images/Work_Images/Beam_2.jpg" alt="Beam_2" style="width:489px;height326px;">
+											 <a href="#" class="image"><img src="images/Work_Images/Beam_2.jpg" style="width:500px;height:600px alt=" /></a> -->
+											<!-- <h3>Projects</h3> -->
+											<p></p>
+										</article>
+										
+										
+										<p style="font-family: Arial, Helvetica, sans-serif;color: black;">
+											
+		
+											Bike sharing is a trend in the major cities in the US. 
+											These shared bikes decrease pollution in the city and provides flexible short distance travel. However, according to bike sharing usage data provided by SFMTA, 
+											average trip is less than 4000 per day considering 262 stations already set up in San Francisco . We would like to analyze how different factors 
+											(e.g. weather, weekend, demographic, nearby functionalities affect the usage of bike sharing). With the analysis, we hope to provide insight for bike sharing operations management 
+											and also a use case for other cities interested in adopting similar programs </br></br>
+											
+											<ul class="links"><li><a href="Projects-3.html">Read More here</a></li></ul>
+											 
+										
+											 
+										</p>
+									</section>
+							<section id="four">
+								<h2 style="text-decoration: underline">4. Credit Risk Analysis (Python) </h2>
+								<p style="font-size: larger; color:midnightblue;">Tags: Data Analytics</p>
 								<!-- <h2 style="font-size: smaller">Btech in Mechanical Engineering (2014 to 2018)</h2> -->
 								<div class="row">
 									<article class="col-6 col-12-xsmall work-item">
