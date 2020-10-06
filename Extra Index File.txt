@@ -1,0 +1,29 @@
+						<article class="col-6 col-12-xsmall work-item">
+								<a href="images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" class="image fit thumb"><img src="images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="Work Experience" /></a>
+								<!-- <h3> <ul class="links"><li><a href="Projects.html">Projects</a></li></ul> </h3> -->
+								<h3 class="links" style="font-size: larger;"><li><a href="Work.html"><strong>Experience</strong> </a></li></h3>
+									<p></p>
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/scott-graham-5fNmWej4tAA-unsplash.jpg" class="image fit thumb"><img src="images/scott-graham-5fNmWej4tAA-unsplash.jpg" alt="Projects" /></a>
+								<h3 class="links" style="font-size: larger;"><li><a href="Projects.html"><strong>Projects</strong> </a></li></h3>
+								<!-- <h3>Projects</h3> -->
+								<p></p>
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/aaron-burden-6jYoil2GhVk-unsplash.jpg" class="image fit thumb"><img src="images/aaron-burden-6jYoil2GhVk-unsplash.jpg" alt="Education" /></a>
+								<h3 class="links" style="font-size: larger;"><li><a href="Education.html"><strong>Education</strong> </a></li></h3>
+								
+								<!-- <h3>Education</h3> -->
+								<p></p>
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/konstantin-dyadyun-UF2-gL3q-38-unsplash.jpg" class="image fit thumb"><img src="images/konstantin-dyadyun-UF2-gL3q-38-unsplash.jpg" alt="Hobbies" /></a>
+								<h3 class="links" style="font-size: larger;"><li><a href="Hobbies.html"><strong>Hobbies</strong> </a></li></h3>
+								
+								<!-- <h3>Hobbies</h3> -->
+								<p></p>
+							</article>
